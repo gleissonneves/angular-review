@@ -1,0 +1,15 @@
+<article>
+  <h6>Eventos</h6>
+  <button (click)="oiMundo()"
+  > Me click!
+  </button>
+
+
+  <h6>Passando eventos por parametro</h6>
+  <button (click)="passandoEvento($event)"
+  > Me click!
+  </button>
+
+  <p></p>
+  <input type="text" (keyup)="onKeyup($event)">
+</article>

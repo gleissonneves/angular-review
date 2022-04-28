@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-x-sm {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.wrapper-x-md {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.wrapper-x-lg {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.wrapper-y-sm {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.wrapper-y-md {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.wrapper-y-lg {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1, .h1 {font-size: 2.5rem;}
+h2, .h2 {font-size: 2rem;}
+h3, .h3 {font-size: 1.75rem;}
+h4, .h4 {font-size: 1.5rem;}
+h5, .h5 {font-size: 1.25rem;}
+h6, .h6 {font-size: 1rem;}

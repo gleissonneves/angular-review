@@ -1,0 +1,18 @@
+<app-wrapper-container>
+    <span>
+        Página: {{ pag }}
+    </span>
+    <button (click)="voltarPag()">
+        Voltar
+    </button>
+    <button (click)="proximaPag()">
+        Próximo
+    </button>
+    
+    
+    <ul>
+        <li *ngFor="let curso of cursos">
+            <a routerLink="/curso/{{ curso.id }}">{{ curso.nome }}</a>
+        </li>
+    </ul>
+</app-wrapper-container>

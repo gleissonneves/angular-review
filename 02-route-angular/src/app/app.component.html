@@ -1,0 +1,26 @@
+<header class="menu-wrapper wrapper-x-md wrapper-y-sm">
+  <nav class="menu-content">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a
+          routerLinkActive="actived" routerLink="cursos"
+          [queryParams]="{ pagina: 1 }"
+          class="menu-link">Cursos</a>
+      </li>
+      <li class="menu-item">
+        <a routerLinkActive="actived" routerLink="login" class="menu-link">Login</a>
+      </li>
+    </ul>
+
+    <div class="menu-brand">
+      <h5 class="menu-brand-title">
+        <a routerLink="" class="menu-link">Title</a>
+      </h5>
+    </div>
+  </nav>
+</header>
+
+
+<main>
+  <router-outlet></router-outlet>
+</main>
