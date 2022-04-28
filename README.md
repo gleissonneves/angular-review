@@ -7,7 +7,7 @@
    - [x] rendering tropics,
    - [ ] forms,
    - [ ] services and HTTP,
-   - [ ] lifecyvle hooks,
+   - [x] lifecyvle hooks,
    - [ ] routing and guards
 - [ ] Gerenciamento de estado;
 - [ ] Test (cypress)
