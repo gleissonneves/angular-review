@@ -1,0 +1,25 @@
+<app-wrapper-container>
+  <h4>Hello studenty</h4>
+
+  <section>
+    <div>
+      <ul>
+        <li *ngFor="let aluno of alunos" class="list-item">
+          <p class="list-title">{{ aluno.name }}</p>
+          <p class="list-informative">{{ aluno.email }}</p>
+
+          <a [routerLink]="[aluno.id]" class="btn">
+            Detalhes
+          </a>
+          <a [routerLink]="['alunos', aluno.id, 'editar']" class="btn">
+            Editar
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="show-outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </section>
+</app-wrapper-container>

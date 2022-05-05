@@ -8,11 +8,15 @@
     <button (click)="proximaPag()">
         Próximo
     </button>
-    
-    
+
     <ul>
-        <li *ngFor="let curso of cursos">
-            <a routerLink="/curso/{{ curso.id }}">{{ curso.nome }}</a>
-        </li>
+      <li *ngFor="let curso of cursos" class="list-item">
+        <p class="list-title">{{ curso.nome }}</p>
+        <p class="list-informative">Carga horária: {{ curso.cargaHoraria }}</p>
+
+        <a [routerLink]="['curso', curso.id]" class="btn">
+          Detalhes
+        </a>
+      </li>
     </ul>
 </app-wrapper-container>

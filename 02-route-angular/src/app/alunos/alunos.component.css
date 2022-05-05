@@ -1,5 +1,16 @@
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 50%;
+}
+
+.show-outlet {
+  padding-left: 30px;
+}
+
 .list-item {
   width: 100%;
+  min-width: 360px;
   padding: 1rem 1.5rem;
   background-color: aliceblue;
   margin-bottom: .5rem;
@@ -24,3 +35,4 @@
   background-color: #dfdddd;
   color: #000;
 }
+
