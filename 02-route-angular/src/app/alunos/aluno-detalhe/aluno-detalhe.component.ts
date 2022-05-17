@@ -9,34 +9,23 @@ import { AlunosService } from '../alunos.service';
 })
 export class AlunoDetalheComponent implements OnInit {
 
-  id: string = '';
+  id: string;
   alunos: any;
 
   constructor(
     private route: ActivatedRoute,
-    private baseRouter: Router,
     private alunosService: AlunosService
   ) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((param) => {
       this.id = param['id'];
-    });
 
-    this.showCurseById();
-    // this.redirectCurseNotFound();
+      this.alunos = this.showCurseById()
+    });
   }
 
   showCurseById() {
-    this.alunos = this.alunosService.findAlunoById(this.id);
+    return this.alunosService.findAlunoById(this.id);
   }
-
-  // redirectCurseNotFound() {
-  //   if (!this.alunos) {
-  //     this.baseRouter.navigate(['nao-encontrado']);
-  //   }
-
-  //   return;
-  // }
-
 }

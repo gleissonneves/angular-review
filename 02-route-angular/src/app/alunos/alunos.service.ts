@@ -14,7 +14,7 @@ export class AlunosService {
         email: 'teste1@email.com',
         details: {
           gender: 'm',
-          age: '20',
+          age: '21',
           interest: ['JavaScript', 'HTML', 'CSS']
         }
       }, {
@@ -23,7 +23,7 @@ export class AlunosService {
         email: 'teste2@email.com',
         details: {
           gender: 'm',
-          age: '20',
+          age: '22',
           interest: ['JavaScript', 'HTML', 'CSS']
         }
       }, {
@@ -33,7 +33,7 @@ export class AlunosService {
         details: {
           gender: 'm',
           age: '20',
-          interest: ['JavaScript', 'HTML', 'CSS']
+          interest: ['Python', 'Shell', 'Rede']
         }
       }
     ];
