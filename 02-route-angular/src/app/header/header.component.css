@@ -1,0 +1,38 @@
+.menu-wrapper {
+    background-color: #008fff;
+    color: #fff;
+    height: 60px;
+    width: 100%;
+}
+
+.menu-wrapper .menu-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-wrapper nav.menu-content ul.menu-list li.menu-item {
+    display: inline;
+    margin-right: 5px;
+}
+
+.menu-wrapper nav.menu-content ul.menu-list li.menu-item a.menu-link {
+    color: #fff;
+    padding: .5rem .75rem;
+}
+
+.menu-wrapper nav.menu-content ul.menu-list li.menu-item a.actived,
+.menu-wrapper nav.menu-content ul.menu-list li.menu-item a.menu-link:hover {
+    background-color: #2fa5ff;
+}
+
+.menu-wrapper nav.menu-content .menu-brand {}
+.menu-wrapper nav.menu-content .menu-brand .menu-brand-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.menu-wrapper nav.menu-content .menu-brand .menu-brand-title a {
+    color: #fff;
+}
+
+
+.container-wrapper {}
