@@ -1,0 +1,11 @@
+:root {
+    --brand-color-primary: #008fff;
+    --brand-color-primary--active: #219FFF;
+    --brand-color-primary--hover: #0084E9;
+
+    --contrast-color-primary: #000000;
+    --contrast-color-secundary: #FFFFFF;
+
+
+    --border-radius-default: .5rem;
+}

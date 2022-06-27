@@ -8,22 +8,22 @@ import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-en
 
 import { CursosService } from './cursos.service';
 
-import { ComponentModule } from '../component/component.module';
 import { CursosRoutingModule } from './cursos-routing.module';
+import { WrapperContainerComponent } from 'src/app/shared/components/wrapper-container/wrapper-container.component';
 
 
 
 @NgModule({
   declarations: [
+    BannerTechComponent,
+    WrapperContainerComponent,
     CursosComponent,
     CursoNaoEncontradoComponent,
     CursoDetalheComponent,
-    BannerTechComponent,
   ],
   imports: [
     CommonModule,
     CursosRoutingModule,
-    ComponentModule
   ],
   exports: [],
   providers: [CursosService]

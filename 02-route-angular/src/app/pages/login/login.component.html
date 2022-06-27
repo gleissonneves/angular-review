@@ -1,0 +1,19 @@
+<main class="login-container">
+    <section class="login-content">
+
+        <figure>
+            <img src="./assets/img/book-svgrepo-com.svg" alt="img" width="100px">
+        </figure>
+
+        <input class="login-input-form" type="text" placeholder="Usuário" [(ngModel)]="login.user">
+        
+        <div class="login-content-password">
+            <input class="login-input-form" [type]="typePassword" placeholder="Senha" [(ngModel)]="login.pass">
+            <i [class]="'fa-solid ' + typeIcon + ' login-content-password-icon'" (click)="tooglePassword()"></i>
+        </div>
+        
+        <button class="login-button" (click)="verifyIfUserExist()">
+            Acessar
+        </button>
+    </section>
+</main>

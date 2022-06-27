@@ -1,0 +1,68 @@
+.login-container {
+    width:100%;
+    height:100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-content-password {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.login-content-password-icon {
+    position: absolute;
+    right: 1rem;
+    top: 0.65rem;
+    cursor: pointer;
+}
+
+figure {
+    margin-bottom: 3rem;
+}
+
+.login-button,
+.login-input-form {
+    width: 100%;
+    padding: .5rem .75rem;
+    margin-bottom: .5rem;
+    border-radius: var(--border-radius-default);
+}
+
+.login-content-password > .login-input-form {
+    padding-right: 2.5rem;
+}
+
+.login-input-form {
+    border: 1px solid #dddddd;
+}
+
+.login-input-form:focus {
+    border-color: var(--brand-color-primary--active);
+}
+
+.login-button {
+    background-color: var(--brand-color-primary);
+    color: var(--contrast-color-secundary);
+    border: none;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: var(--brand-color-primary--hover);
+}
+
+.login-button:active {
+    background-color: var(--brand-color-primary--active);
+    opacity: .9;
+}
